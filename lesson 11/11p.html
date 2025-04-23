@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11p</title>
+</head>
+<body>
+    <script>
+        const myArray=['hello','world','search','good','search'];
+        let isthere=false;
+        let i=0;
+        while(i<myArray.length){
+            if(myArray[i]==='search'){
+                isthere=true;
+                break;
+            }
+            i++;
+        }
+      
+        if(isthere){
+            console.log(i);
+        }
+        else{
+            console.log(-1);
+        }
+
+    </script>
+</body>
+</html>

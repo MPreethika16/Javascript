@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11i</title>
+</head>
+<body>
+    <script>
+        
+        function addNum(myArray,num){
+            const nums1=[];
+            for(let i=0;i<myArray.length;i++){
+                nums1.push(myArray[i]+num);
+            }
+            return nums1;
+        }
+       console.log(addNum([1,2,3],2));
+       console.log(addNum([1,2,3],3));
+       console.log(addNum([-2,-1,0,99],2));
+        
+    </script>
+</body>
+</html>

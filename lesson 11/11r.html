@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11r</title>
+</head>
+<body>
+    <script>
+        const array=[];
+        function removeEggs(foods){
+            for(let i=0;i<foods.length;i++){
+                if(foods[i]==='egg'){
+                    continue;
+                }
+                else   
+                    array.push(foods[i]);
+            }
+            return array;
+        }
+        console.log(removeEggs(['egg','apple','egg','egg','ham']));
+    </script>
+</body>
+</html>

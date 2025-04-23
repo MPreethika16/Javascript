@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9e</title>
+</head>
+<body>
+    <input type="text" class="js-input" onkeydown="handleKeyboardEvent(event)">
+    <button onclick="inputText()" >Submit</button>
+    <p></p>
+    <script>
+        function handleKeyboardEvent(event){
+            if(event.key==='Enter'){
+                inputText();
+            }
+        }
+
+        function inputText(){
+            let text=document.querySelector('.js-input').value;
+            document.querySelector('p').innerText=`Your name is ${text}`;
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12e</title>
+</head>
+<body>
+    <button class="js-btn" onclick="updatedMessage();">Add to cart</button>
+    <p class="js-para"></p>
+    <script>
+        function updatedMessage(){
+            const paraElement=document.querySelector('.js-para');
+            paraElement.innerHTML='Added';
+            setTimeout(function(){
+                paraElement.innerHTML='';
+            },2000);
+
+        }
+    </script>
+</body>
+</html>
